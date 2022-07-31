@@ -29,5 +29,12 @@ namespace Factorial
             }
             return a;
         }
+
+        public static int factorial1(int n) => (n == 0) ? 1 : n * factorial(n - 1);
+
+        public static int factorial2(int n)
+        {
+            return n < 2 ? 1 : n * factorial(n - 1);
+        }
     }
 }
